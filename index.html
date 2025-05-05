@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behavioral Finance Questionnaire</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #333;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .question-group {
+      margin-bottom: 20px;
+    }
+    .question-title {
+      font-weight: bold;
+    }
+    .radio-group {
+      margin-left: 20px;
+    }
+    .submit-btn {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Behavioral Finance Questionnaire</h2>
+    <form id="behavior-form">
+      <div class="question-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="question-group">
+        <p class="question-title">My main role in managing my money is:</p>
+        <div class="radio-group">
+          <label><input type="radio" name="role" value="guardian"> To be the guardian of my wealth by not making risky investments</label>
+          <label><input type="radio" name="role" value="trader"> Actively trading my account to accumulate wealth</label>
+          <label><input type="radio" name="role" value="researcher"> Doing research before investment decisions</label>
+          <label><input type="radio" name="role" value="listener"> Listening to others for advice on managing money</label>
+        </div>
+      </div>
+      <div class="question-group">
+        <p class="question-title">When it comes to financial matters, I most agree with:</p>
+        <div class="radio-group">
+          <label><input type="radio" name="attitude" value="loss-averse"> Losing money is the worst possible outcome</label>
+          <label><input type="radio" name="attitude" value="opportunist"> I should act quickly on opportunities to make money</label>
+          <label><input type="radio" name="attitude" value="thoughtful"> I need to be satisfied I have taken time to understand an investment</label>
+          <label><input type="radio" name="attitude" value="uninvolved"> I should not be in charge of overseeing my money</label>
+        </div>
+      </div>
+      <div class="question-group">
+        <p class="question-title">When deciding on an investment, I trust:</p>
+        <div class="radio-group">
+          <label><input type="radio" name="trust" value="self-discipline"> My own self-discipline</label>
+          <label><input type="radio" name="trust" value="instinct"> My gut instincts</label>
+          <label><input type="radio" name="trust" value="research"> My own research</label>
+          <label><input type="radio" name="trust" value="advisor"> Someone other than myself</label>
+        </div>
+      </div>
+      <div class="question-group">
+        <p class="question-title">When markets are going up, I am:</p>
+        <div class="radio-group">
+          <label><input type="radio" name="market-feeling" value="relieved"> Relieved</label>
+          <label><input type="radio" name="market-feeling" value="excited"> Excited</label>
+          <label><input type="radio" name="market-feeling" value="calm"> Calm and rational</label>
+          <label><input type="radio" name="market-feeling" value="glad"> Glad I am following someone’s advice</label>
+        </div>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
